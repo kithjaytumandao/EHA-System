@@ -42,12 +42,19 @@ namespace EHA_System
             this.label4 = new System.Windows.Forms.Label();
             this.TimeIncident_amb = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Completed_req_btn = new System.Windows.Forms.Button();
+            this.Pending_req_btn = new System.Windows.Forms.Button();
+            this.All_req_btn = new System.Windows.Forms.Button();
+            this.Amb_req_label = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Name_Requester = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -197,11 +204,81 @@ namespace EHA_System
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.Amb_req_label);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(3, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(614, 462);
             this.panel2.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.Completed_req_btn);
+            this.panel1.Controls.Add(this.Pending_req_btn);
+            this.panel1.Controls.Add(this.All_req_btn);
+            this.panel1.Location = new System.Drawing.Point(35, 64);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(232, 37);
+            this.panel1.TabIndex = 10;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Red;
+            this.panel4.Location = new System.Drawing.Point(75, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(75, 5);
+            this.panel4.TabIndex = 11;
+            // 
+            // Completed_req_btn
+            // 
+            this.Completed_req_btn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Completed_req_btn.FlatAppearance.BorderSize = 0;
+            this.Completed_req_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Completed_req_btn.Location = new System.Drawing.Point(150, 0);
+            this.Completed_req_btn.Name = "Completed_req_btn";
+            this.Completed_req_btn.Size = new System.Drawing.Size(75, 37);
+            this.Completed_req_btn.TabIndex = 2;
+            this.Completed_req_btn.Text = "Completed";
+            this.Completed_req_btn.UseVisualStyleBackColor = true;
+            this.Completed_req_btn.Click += new System.EventHandler(this.Completed_req_Click);
+            // 
+            // Pending_req_btn
+            // 
+            this.Pending_req_btn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Pending_req_btn.FlatAppearance.BorderSize = 0;
+            this.Pending_req_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pending_req_btn.Location = new System.Drawing.Point(75, 0);
+            this.Pending_req_btn.Name = "Pending_req_btn";
+            this.Pending_req_btn.Size = new System.Drawing.Size(75, 37);
+            this.Pending_req_btn.TabIndex = 1;
+            this.Pending_req_btn.Text = "Pending";
+            this.Pending_req_btn.UseVisualStyleBackColor = true;
+            this.Pending_req_btn.Click += new System.EventHandler(this.Pending_req_btn_Click);
+            // 
+            // All_req_btn
+            // 
+            this.All_req_btn.Dock = System.Windows.Forms.DockStyle.Left;
+            this.All_req_btn.FlatAppearance.BorderSize = 0;
+            this.All_req_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.All_req_btn.Location = new System.Drawing.Point(0, 0);
+            this.All_req_btn.Name = "All_req_btn";
+            this.All_req_btn.Size = new System.Drawing.Size(75, 37);
+            this.All_req_btn.TabIndex = 0;
+            this.All_req_btn.Text = "All";
+            this.All_req_btn.UseVisualStyleBackColor = true;
+            this.All_req_btn.Click += new System.EventHandler(this.All_req_btn_Click);
+            // 
+            // Amb_req_label
+            // 
+            this.Amb_req_label.AutoSize = true;
+            this.Amb_req_label.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Amb_req_label.Location = new System.Drawing.Point(9, 8);
+            this.Amb_req_label.Name = "Amb_req_label";
+            this.Amb_req_label.Size = new System.Drawing.Size(225, 26);
+            this.Amb_req_label.TabIndex = 9;
+            this.Amb_req_label.Text = "Ambulance Requests";
             // 
             // dataGridView1
             // 
@@ -211,10 +288,10 @@ namespace EHA_System
             this.Name_Requester,
             this.ID_num,
             this.Time});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 58);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 166);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(608, 404);
+            this.dataGridView1.Size = new System.Drawing.Size(608, 296);
             this.dataGridView1.TabIndex = 0;
             // 
             // Name_Requester
@@ -246,6 +323,8 @@ namespace EHA_System
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -269,5 +348,11 @@ namespace EHA_System
         private System.Windows.Forms.DataGridViewTextBoxColumn Time;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
         private System.Windows.Forms.Button Accpt_rqst_btn;
+        private System.Windows.Forms.Label Amb_req_label;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button Completed_req_btn;
+        private System.Windows.Forms.Button Pending_req_btn;
+        private System.Windows.Forms.Button All_req_btn;
+        private System.Windows.Forms.Panel panel4;
     }
 }

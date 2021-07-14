@@ -50,6 +50,9 @@ namespace EHA_System
             this.label1 = new System.Windows.Forms.Label();
             this.Incident_label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.Incident_2label = new System.Windows.Forms.Label();
+            this.day_label = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -86,6 +89,9 @@ namespace EHA_System
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.day_label);
+            this.panel2.Controls.Add(this.Incident_2label);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(2, 1);
             this.panel2.Name = "panel2";
@@ -270,6 +276,36 @@ namespace EHA_System
             this.panel3.Size = new System.Drawing.Size(347, 462);
             this.panel3.TabIndex = 6;
             // 
+            // Incident_2label
+            // 
+            this.Incident_2label.AutoSize = true;
+            this.Incident_2label.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Incident_2label.Location = new System.Drawing.Point(10, 8);
+            this.Incident_2label.Name = "Incident_2label";
+            this.Incident_2label.Size = new System.Drawing.Size(146, 22);
+            this.Incident_2label.TabIndex = 1;
+            this.Incident_2label.Text = "Incident Reports";
+            // 
+            // day_label
+            // 
+            this.day_label.AutoSize = true;
+            this.day_label.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.day_label.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.day_label.Location = new System.Drawing.Point(22, 34);
+            this.day_label.Name = "day_label";
+            this.day_label.Size = new System.Drawing.Size(41, 15);
+            this.day_label.TabIndex = 2;
+            this.day_label.Text = "Today";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(269, 16);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2021, 7, 15, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.Value = new System.DateTime(2021, 7, 15, 0, 0, 0, 0);
+            // 
             // HomeDashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -282,6 +318,7 @@ namespace EHA_System
             this.Text = "HomeDashBoard";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -311,5 +348,8 @@ namespace EHA_System
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Incident_label;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label day_label;
+        private System.Windows.Forms.Label Incident_2label;
     }
 }

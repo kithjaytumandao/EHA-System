@@ -41,5 +41,42 @@ namespace EHA_System
         {
 
         }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void day_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void All_req_btn_Click(object sender, EventArgs e)
+        {
+            
+            
+            panel4.Left = All_req_btn.Left;
+            
+        }
+
+        private void Pending_req_btn_Click(object sender, EventArgs e)
+        {
+            
+            
+            panel4.Left = Pending_req_btn.Left;
+        }
+
+        private void Completed_req_Click(object sender, EventArgs e)
+        {
+           
+            
+            panel4.Left = Completed_req_btn.Left;
+        }
     }
 }
