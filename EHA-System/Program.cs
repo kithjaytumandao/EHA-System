@@ -17,7 +17,7 @@ namespace EHA_System
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainPage());
+            Application.Run(new Loginpage());
         }
     }
 }

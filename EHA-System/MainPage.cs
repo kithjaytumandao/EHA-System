@@ -84,10 +84,10 @@ namespace EHA_System
             panel3.Top = Aider_reg.Top;
             panel3.Left = Aider_reg.Left;
             this.panelFormLoader.Controls.Clear();
-            HomeDashBoard homeDashBoard = new HomeDashBoard() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            homeDashBoard.FormBorderStyle = FormBorderStyle.None;
-            this.panelFormLoader.Controls.Add(homeDashBoard);
-            homeDashBoard.Show();
+            FirstAiderRegisterDashboards firstAiderRegisterDashboard = new FirstAiderRegisterDashboards() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            firstAiderRegisterDashboard.FormBorderStyle = FormBorderStyle.None;
+            this.panelFormLoader.Controls.Add(firstAiderRegisterDashboard);
+            firstAiderRegisterDashboard.Show();
         }
 
         private void Reports_btn_click(object sender, EventArgs e)

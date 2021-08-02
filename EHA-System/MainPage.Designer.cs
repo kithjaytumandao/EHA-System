@@ -31,6 +31,7 @@ namespace EHA_System
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.Logout_btn = new System.Windows.Forms.Button();
             this.Reports_btn = new System.Windows.Forms.Button();
             this.Aider_reg = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace EHA_System
             this.Title_admin = new System.Windows.Forms.Label();
             this.Notification_btn = new System.Windows.Forms.Button();
             this.circle_btn1 = new EHA_System.Circle_btn();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,14 @@ namespace EHA_System
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(155, 465);
             this.panel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Red;
+            this.panel3.Location = new System.Drawing.Point(9, 126);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(8, 63);
+            this.panel3.TabIndex = 6;
             // 
             // Logout_btn
             // 
@@ -178,14 +186,6 @@ namespace EHA_System
             this.circle_btn1.Size = new System.Drawing.Size(77, 66);
             this.circle_btn1.TabIndex = 5;
             this.circle_btn1.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Red;
-            this.panel3.Location = new System.Drawing.Point(9, 126);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(8, 63);
-            this.panel3.TabIndex = 6;
             // 
             // MainPage
             // 

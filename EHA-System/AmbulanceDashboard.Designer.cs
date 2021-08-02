@@ -29,9 +29,7 @@ namespace EHA_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AmbulanceDashboard));
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Accpt_rqst_btn = new System.Windows.Forms.Button();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.label1 = new System.Windows.Forms.Label();
             this.First_Aider_name_amb = new System.Windows.Forms.Label();
@@ -60,7 +58,6 @@ namespace EHA_System
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.Accpt_rqst_btn);
             this.panel3.Controls.Add(this.gMapControl1);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.First_Aider_name_amb);
@@ -75,20 +72,6 @@ namespace EHA_System
             this.panel3.Size = new System.Drawing.Size(347, 462);
             this.panel3.TabIndex = 8;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // Accpt_rqst_btn
-            // 
-            this.Accpt_rqst_btn.BackColor = System.Drawing.Color.LightCoral;
-            this.Accpt_rqst_btn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Accpt_rqst_btn.Image = ((System.Drawing.Image)(resources.GetObject("Accpt_rqst_btn.Image")));
-            this.Accpt_rqst_btn.Location = new System.Drawing.Point(23, 394);
-            this.Accpt_rqst_btn.Name = "Accpt_rqst_btn";
-            this.Accpt_rqst_btn.Size = new System.Drawing.Size(304, 42);
-            this.Accpt_rqst_btn.TabIndex = 14;
-            this.Accpt_rqst_btn.Text = "Accept Request";
-            this.Accpt_rqst_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Accpt_rqst_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Accpt_rqst_btn.UseVisualStyleBackColor = false;
             // 
             // gMapControl1
             // 
@@ -347,7 +330,6 @@ namespace EHA_System
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_num;
         private System.Windows.Forms.DataGridViewTextBoxColumn Time;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
-        private System.Windows.Forms.Button Accpt_rqst_btn;
         private System.Windows.Forms.Label Amb_req_label;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Completed_req_btn;
