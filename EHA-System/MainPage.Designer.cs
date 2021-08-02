@@ -77,6 +77,7 @@ namespace EHA_System
             this.Logout_btn.Size = new System.Drawing.Size(155, 63);
             this.Logout_btn.TabIndex = 4;
             this.Logout_btn.UseVisualStyleBackColor = true;
+            this.Logout_btn.Click += new System.EventHandler(this.Logout_btn_Click);
             // 
             // Reports_btn
             // 

@@ -101,5 +101,12 @@ namespace EHA_System
             this.panelFormLoader.Controls.Add(homeDashBoard);
             homeDashBoard.Show();
         }
+
+        private void Logout_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Loginpage open_login = new Loginpage();
+            open_login.Show();
+        }
     }
 }
